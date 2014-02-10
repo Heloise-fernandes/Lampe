@@ -1,14 +1,24 @@
 
 public class Test
 {
-/**Ici est la fonctions principale
- * @param b j'aime les pattates*/
     public static void main(String[] args)
     {
-	if (args.length>0)
+	Lampe Malampe = new Lampe();
+	System.out.println(Malampe.puissance);
+	System.out.println(Malampe.estAllumee);
+	
+	if (Malampe.estAllumee)
 	{
-	    System.out.println(args[0]);
+	    Malampe.eteindre();
 	}
+	else
+	{
+	    Malampe.allumee();
+	}
+	System.out.println(Malampe.puissance);
+	System.out.println(Malampe.estAllumee);
+
+
     }
 
 }
