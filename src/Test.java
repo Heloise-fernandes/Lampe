@@ -4,8 +4,8 @@ public class Test
     public static void main(String[] args)
     {
 	Lampe Malampe = new Lampe();
-	System.out.println(Malampe.puissance);
-	System.out.println(Malampe.estAllumee);
+	System.out.println(Malampe.getpuissance());
+	System.out.println(Malampe.getestallumee());
 	
 	if (Malampe.estAllumee)
 	{
@@ -15,8 +15,8 @@ public class Test
 	{
 	    Malampe.allumee();
 	}
-	System.out.println(Malampe.puissance);
-	System.out.println(Malampe.estAllumee);
+	System.out.println(Malampe.getpuissance());
+	System.out.println(Malampe.getestallumee());
 
 
     }
